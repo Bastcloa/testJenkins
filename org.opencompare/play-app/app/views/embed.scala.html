@@ -1,0 +1,46 @@
+@(id : String = null, data : play.api.libs.json.JsValue = null, modal : String = null)(implicit messages: Messages, context: controllers.ViewContext)
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        @mainHeader()
+        @editHeader()
+        <link rel='stylesheet' href='@routes.Assets.at("stylesheets/embed.css")'>
+
+    </head>
+    <body ng-app="openCompare">
+
+        <div class="container-fluid" id="main-content">
+            <div ng-controller="OCEditorCtrl">
+
+                <div class="row" class="ocEditor">
+                    <oc-editor pcm-container="pcmContainer" config="config" state="state">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <oc-title></oc-title>
+                            <oc-toolbar></oc-toolbar>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <oc-grid></oc-grid>
+                    </div>
+
+                    <div class="row">
+                        <oc-charts></oc-charts>
+                    </div>
+
+                    </oc-editor>
+                </div>
+
+            </div>
+        </div>
+
+
+        @mainFooter()
+        @editFooter(id, data, modal)
+    </body>
+
+</html>
+

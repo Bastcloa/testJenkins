@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dataset</artifactId>
+        <groupId>org.opencompare.dataset</groupId>
+        <version>0.7-SNAPSHOT</version>
+        <relativePath>../dataset/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dataset-best-buy</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.opencompare</groupId>
+            <artifactId>api-java</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opencompare</groupId>
+            <artifactId>api-java-impl</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opencompare.io</groupId>
+            <artifactId>io-best-buy</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opencompare</groupId>
+            <artifactId>formalizer</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scalaj</groupId>
+            <artifactId>scalaj-http_${scala.binary}</artifactId>
+            <version>${scalahttp.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_${scala.binary}</artifactId>
+            <version>${scalatest.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.tototoshi</groupId>
+            <artifactId>scala-csv_${scala.binary}</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.mpkorstanje</groupId>
+            <artifactId>simmetrics-core</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.4.2</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

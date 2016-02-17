@@ -1,0 +1,191 @@
+button.search=Search
+button.search.placeholder=Search
+
+navbar.about=About
+navbar.about.project=Project
+navbar.about.privacy=Privacy policy
+navbar.list=Browse existing tables
+navbar.start=Create
+navbar.create=From scratch
+navbar.export=Export
+navbar.export.csv=To CSV
+navbar.export.wikipedia=To Wikipedia syntax
+navbar.export.html=To Html
+navbar.import=Import
+navbar.import.csv=From CSV
+navbar.import.wikipedia=From Wikipedia
+navbar.import.html=From Html
+navbar.signIn=Sign In
+navbar.signUp=Sign Up
+navbar.signOut=Sign Out
+navbar.profile=Profile
+
+index.warning=<strong>Warning!</strong> OpenCompare is currently in development. \
+  Some of its features may be limited or buggy. \
+  You can help us to improve the website by contributing on <a href="https://github.com/gbecan/PCM">Github</a>.
+
+index.description=Comparing has never been so easy.
+
+index.import.title=Import
+index.import.description= Import in one click comparison matrices from Wikipedia or a file.
+
+index.edit.title=Edit
+index.edit.description=OpenCompare offers a dedicated editor for comparison matrices with built-in filtering, sorting and cell validation.
+
+index.compare.title=Compare
+index.compare.description=Filter, sort and select information that you want to compare.
+
+index.share.title=Share
+index.share.description=Share a comparison matrix through email, twitter, facebook, reddit, etc. In one line, you can also integrate it in a website.
+
+index.pcm.title=Product comparison matrices
+index.pcm.text=Comparing product can be a tedious and time-consuming task. It requires to review numerous sources of information that are often ambiguous and unstructured. \
+  A simple way of comparing a set of products is to summarize their characteristics in a matrix. \
+  Such matrices abound on the internet but often lack of services and are created without any guidelines. \
+  The main objective of OpenCompare is to tackle these problems by creating a community around product comparison matrices with the help of appropriated tools and services.
+
+index.edition.title=Collaborative edition
+index.edition.text=OpenCompare offers a simple graphical editor for product comparison matrices. \
+  Everyone can contribute by creating new matrices or by improving existing ones. \
+  Once a modification is saved, the new version of the matrix is directly made available. \
+  This system enables a collaborative edition which places the community of contributors at the center of process.
+
+index.opendata.title=Open data
+index.opendata.text=One objective of OpenCompare is to give free and unlimited access to its data. \
+  Anyone should be able to access existing data about different products through a simple API.
+
+index.io.title=Import/Export
+index.io.text=OpenCompare aim at providing a central platform for using and editing product comparison matrices. \
+  This is made possible through the import and export of various formats such as: \
+    <ul>\
+        <li>CSV</li>\
+        <li>Wikipedia markup language</li>\
+    </ul>
+
+index.freesoftware.title=Free Software
+index.freesoftware.text=OpenCompare is developed by a small team at <a href="http://www.irisa.fr/en">IRISA</a>, a French research center. \
+  We use it as a main platform for testing our different research projects around product comparison matrices. \
+  Such matrices are very common but the lack of efficient tools makes them underexploited. \
+  We believe that opening our source code can help the community of contributors and users of product comparison matrices. \
+  It also give us the opportunity to get valuable feedback on our ongoing research. \
+  As such, we welcome any contribution (e.g. translation, bug fix, new feature).
+
+index.github=Find out more on Github
+index.twitter=Follow us on Twitter
+index.extensions.title=Extend your browser
+index.extensions.text=Exploit all the features of OpenCompare while browsing your favorite websites.\
+  Our Chrome and Firefox extensions allows you to replace any table by OpenCompare editor.
+index.extensions.last=Last comparison matrices explored by the users of our extensions:
+index.chrome=Chrome
+index.firefox=Firefox
+
+index.social.title=Don''t miss anything!
+index.social.text=Get the latest news on our twitter feed.\
+  If you are a developer, you can find all our source code on Github and help us build state-of-the-art comparison tools.
+
+search.title=Comparison matrices corresponding to
+
+view.button.edit=Edit
+
+edit.title=Title
+edit.title.placeholder=Title
+edit.title.createNewFeature=Create a new feature
+edit.title.createNewFeatureGroup=Create a new feature group
+edit.title.featureName=Feature Name
+edit.title.featureType=Feature type
+edit.title.featureSelection=Select the features you want to add in
+edit.title.renameFeature=Rename
+edit.title.changeType=Change type
+edit.title.selectRange=Select a range to filter
+edit.title.from=From
+edit.title.to=To
+edit.title.selectProducts=Select products to filter
+edit.title.embed=Embed
+edit.title.showTitle=Show title
+edit.title.allowEdition=Allow edition
+edit.title.allowExportation=Allow exportation
+edit.title.allowSharing=Allow sharing
+edit.title.allowConfigurator=Allow configurator
+edit.title.allowCharts=Allow charts
+edit.title.confirm=Confirm
+edit.title.assignFeatureGroup=Assign feature group
+
+edit.button.edit=Edit
+edit.button.export=Export
+edit.button.save=Save
+edit.button.validate=Validate
+edit.button.embed=Embed
+edit.button.remove=Remove
+edit.button.addfeature=Feature
+edit.button.addfeaturegroup=Feature group
+edit.button.addproduct=Product
+edit.button.cancel=Cancel
+edit.button.apply=Apply
+edit.button.confirm=Are you sure?
+edit.button.no=No
+edit.button.yes=Yes
+edit.button.share=Share
+edit.button.height=Row height
+
+edit.type.string=String
+edit.type.boolean=Boolean
+edit.type.number=Number
+
+edit.source.placeholder=Source
+edit.license.placeholder=License
+
+edit.warning.removeIsDefinitive=Removing the comparison matrix is definitive and cannot be undone. Please, confirm.
+edit.warning.cancelWillLoseChanges=Cancel will lose all unsaved changes are you sure?
+
+edit.validation.warning=This value doesn''t seem to match the feature type, validate if you want to keep it.
+
+importer.select=Select a file to import
+importer.select.url=Give a wikipedia matrix title
+importer.type=Select a file extention
+importer.csv.separator=Separator
+importer.csv.quote=Quote
+importer.csv.header=Has header ?
+importer.pcm.title=Title
+importer.pcm.productAsLines=Product as lines ?
+importer.button.getfile=Select a file
+importer.button.cancel=Cancel
+importer.button.confirm=Confirm
+importer.button.confirm.message=Are you sure to import?
+importer.button.confirm.desc=Please, give a name to this new PCM and confirm.
+
+
+about.project.title=OpenCompare
+about.project.project.title=What is OpenCompare?
+about.project.project.text=OpenCompare is a free software for editing and exploiting comparison matrices.
+
+about.project.history.title=History of the project
+about.project.history.text=The project officially started in October 2014 at <a href="https://www.irisa.fr/en">IRISA</a>, a French research center.
+
+about.project.contributors.title=Who are we?
+about.project.contributors.text=Currently, the project is developed by members of the <a href="http://diverse.irisa.fr/">DiverSE</a> research team from <a href="https://www.irisa.fr/en">IRISA</a>:\
+  <ul>\
+    <li><a href="http://www.mathieuacher.com">Mathieu Acher</a>: associate professor</li>\
+    <li><a href="https://gbecan.wordpress.com">Guillaume Bécan</a>: PhD student</li>\
+    <li>Stéphane Mangin: intern</li>\
+    <li>Hugo Vallée: intern</li>\
+    <li>Simon: fictional intern that is responsible for the incomplete pages and documentations</li>\
+  <ul>
+
+
+
+about.privacy.title=Privacy policy
+
+inconstruction.message=Simon is still working on this part of OpenCompare...
+inconstruction.github=OpenCompare is free software. Help us on Github.
+
+signin.title=Sign in with...
+signin.account=OpenCompare account
+signin.provider=External service
+twitter=Twitter
+steam=Steam
+google=Google
+
+signup.title=Create an account on OpenCompare
+
+footer.license=Licensed under Apache V2 license
+footer.contact=Contact us at

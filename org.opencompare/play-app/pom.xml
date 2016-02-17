@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>opencompare</artifactId>
+        <groupId>org.opencompare</groupId>
+        <version>0.7-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>play-app</artifactId>
+    <version>0.7-SNAPSHOT</version>
+
+
+    <packaging>play2</packaging>
+
+    <repositories>
+        <repository>
+            <id>typesafe</id>
+            <url>http://repo.typesafe.com/typesafe/releases/</url>
+        </repository>
+    </repositories>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>casbah_${scala.binary}</artifactId>
+            <version> 2.8.2 </version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opencompare</groupId>
+            <artifactId>api-java</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opencompare</groupId>
+            <artifactId>api-java-impl</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opencompare</groupId>
+            <artifactId>formalizer</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opencompare.io</groupId>
+            <artifactId>io-wikipedia</artifactId>
+            <version>0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.julienrf</groupId>
+            <artifactId>play-jsmessages_${scala.binary}</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mohiva</groupId>
+            <artifactId>play-silhouette_${scala.binary}</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.codingwell</groupId>
+            <artifactId>scala-guice_${scala.binary}</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.ceedubs</groupId>
+            <artifactId>ficus_${scala.binary}</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+
+        <!-- Play Framework Dependencies -->
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play_${scala.binary}</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-test_${scala.binary}</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--&lt;!&ndash; the Java API is in this artifact &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.typesafe.play</groupId>-->
+            <!--<artifactId>play-java_${scala.version.minor}</artifactId>-->
+            <!--<version>${play.version}</version>-->
+        <!--</dependency>-->
+
+    </dependencies>
+
+    <build>
+        <!-- Play source directory -->
+        <sourceDirectory>app</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.nanoko.playframework</groupId>
+                <artifactId>play2-maven-plugin</artifactId>
+                <version>1.2.5</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <executableName>activator</executableName>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <id>play2-add-managed-sources</id>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>
+                                    ${project.build.directory}/scala-${scala.binary}/src_managed/main
+                                </source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.nanoko.playframework</groupId>
+                    <artifactId>play2-maven-plugin</artifactId>
+                    <version>1.2.5</version>
+                    <configuration>
+                        <skipTests>true</skipTests>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+    </build>
+
+</project>

@@ -1,0 +1,50 @@
+@(pcms : List[PCMInfo], limit : Int, page : Int, nbPages : Int)(implicit messages: Messages, context: controllers.ViewContext)
+
+@header = {
+    <link rel='stylesheet' href='@routes.Assets.at("stylesheets/list.css")'>
+}
+
+@footer = {
+
+}
+
+@pagination = {
+
+    <div class="row text-center">
+        <nav>
+            <ul class="pagination">
+                <li @if(page<=1) {class="disabled"}>
+                    <a @if(page>1) {href="/list/@limit/@(page - 1)"}>
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                @for(numPage <- 1 to nbPages) {
+                    <li @if(numPage == page){class="active"}><a href="/list/@limit/@numPage">@numPage</a></li>
+                }
+                <li @if(page>=nbPages) {class="disabled"}>
+                    <a @if(page<nbPages) {href="/list/@limit/@(page + 1)"}>
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+}
+
+@main(header, footer, fullSize = false) {
+
+    @pagination
+
+    <div class="row">
+        @for(pcm <- pcms) {
+            <a class="btn btn-primary btn-flat btn-xs oc-list" href="/pcm/@pcm.id">@pcm.name</a><br/>
+        }
+    </div>
+
+    @pagination
+
+
+}

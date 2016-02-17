@@ -1,0 +1,66 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: white;
+}
+
+#main-content {
+    flex: 1;
+    margin-top: 70px;
+}
+
+.footer {
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgb(63, 81, 181);
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+}
+
+
+
+
+.red {
+    color: red;
+}
+
+center {
+    text-align: center;
+}
+
+#navbar-logo {
+    position: relative;
+    top: -4px;
+}
+
+.btn-lowercase {
+    text-transform: none;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.panel {
+    padding: 0px;
+}

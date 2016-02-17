@@ -1,0 +1,12 @@
+*~
+*.class
+target/
+.idea/
+.DS_Store
+*.iml
+.idea_modeules/
+logs/application.log
+
+.classpath
+.project
+.settings/

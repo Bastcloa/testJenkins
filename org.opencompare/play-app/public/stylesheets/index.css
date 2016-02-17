@@ -1,0 +1,34 @@
+.description {
+    text-align: center;
+    font-size: x-large;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+
+.card-icon {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-description {
+    text-align: justify;
+}
+
+.panel {
+    margin: 10px;
+}
+
+.panel-title {
+    font-size: x-large;
+}
+
+p {
+    font-size: medium;
+}

@@ -1,0 +1,5 @@
+# Created by .gitignore support plugin (hsz.mobi)
+org.diverse.PCM.model/target
+
+org.diverse.PCM.play-app/logs
+pom.xml.versionsBackup
